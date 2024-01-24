@@ -1,0 +1,15 @@
+DocType: Wechat App,Language,语言
+DocType: Wechat AppMenu,Menu,菜单
+Wechat,微信
+Wechat Work,企业微信
+Wechat Agent,微信企业应用
+Wechat Corp,微信企业
+Wechat Send Test,微信发送测试
+Wechat Message Type,微信消息类型
+Text Card,文本卡片
+Corp Id,企业ID
+Agent Name, App名称
+
+Message Type,消息类型
+Textcard,文本卡片   
+Image,图片

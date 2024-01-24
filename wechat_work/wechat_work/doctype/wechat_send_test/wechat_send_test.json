@@ -1,0 +1,129 @@
+{
+ "actions": [
+  {
+   "action": "wechat_work.api.send",
+   "action_type": "Server Action",
+   "label": "Send"
+  }
+ ],
+ "allow_rename": 1,
+ "autoname": "field:test_name",
+ "creation": "2024-01-03 17:03:34.739686",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "test_name",
+  "agent_name",
+  "user_id",
+  "department",
+  "tag",
+  "safe",
+  "column_break_qtwr",
+  "message_type",
+  "content",
+  "content1",
+  "content2",
+  "content3",
+  "send"
+ ],
+ "fields": [
+  {
+   "fieldname": "test_name",
+   "fieldtype": "Data",
+   "label": "Test Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "agent_name",
+   "fieldtype": "Link",
+   "label": "Agent Name",
+   "options": "Wechat Agent"
+  },
+  {
+   "description": "user Ids(multi, input) @all",
+   "fieldname": "user_id",
+   "fieldtype": "Data",
+   "label": "User Id"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department"
+  },
+  {
+   "fieldname": "tag",
+   "fieldtype": "Data",
+   "label": "Tag"
+  },
+  {
+   "default": "0",
+   "fieldname": "safe",
+   "fieldtype": "Check",
+   "label": "Safe"
+  },
+  {
+   "fieldname": "column_break_qtwr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "message_type",
+   "fieldtype": "Link",
+   "label": "Message Type",
+   "options": "Wechat Message Type"
+  },
+  {
+   "fieldname": "content",
+   "fieldtype": "Long Text",
+   "label": "Content"
+  },
+  {
+   "fieldname": "content1",
+   "fieldtype": "Data",
+   "label": "Content1"
+  },
+  {
+   "fieldname": "content2",
+   "fieldtype": "Data",
+   "label": "Content2"
+  },
+  {
+   "fieldname": "content3",
+   "fieldtype": "Data",
+   "label": "Content3"
+  },
+  {
+   "bold": 1,
+   "description": "\uff08\u6682\u65f6\u4e0d\u80fd\u7528\uff0c\u4f7f\u7528\u4e0a\u90e8\u6309\u94ae\uff09",
+   "fieldname": "send",
+   "fieldtype": "Button",
+   "label": "Send",
+   "max_height": "16px",
+   "width": "10"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-04 16:24:46.713103",
+ "modified_by": "Administrator",
+ "module": "Wechat Work",
+ "name": "Wechat Send Test",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

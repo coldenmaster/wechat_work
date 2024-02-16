@@ -25,14 +25,15 @@ def send_str_to_admin(msg):
 def send_str_to_wework(msg, app_name='TEST_APP',  user_ids='wangtao',
                   party_ids='', tag_ids='', safe=0):
     # print(f"app_name: {app_name}")
-    corp_id, agent_id, secret = get_corp_agent_secret(app_name)
-
-    client = get_client(corp_id, secret)
-    client.message.send_text(agent_id, user_ids, msg, party_ids, tag_ids, safe)
-
+    try:
+        corp_id, agent_id, secret = get_corp_agent_secret(app_name)
+        client = get_client(corp_id, secret)
+        client.message.send_text(agent_id, user_ids, msg, party_ids, tag_ids, safe)
+    except Exception as e:
+        frappe.log_error("send_str_to_wework except")
+        # frappe.get_traceback(True)
         
-
-
+    
 
 @frappe.whitelist(allow_guest=True)
 @timer

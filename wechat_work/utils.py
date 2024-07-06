@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 # sys.path.append(str(Path(__file__).resolve().parents[2])) 
-from bbl_api.utils import timer
 from wechatpy.enterprise import WeChatClient
 from wechatpy.session.redisstorage import RedisStorage
 
@@ -35,14 +34,6 @@ def send_str_to_wework(msg, app_name='TEST_APP',  user_ids='wangtao',
         
     
 
-@frappe.whitelist(allow_guest=True)
-@timer
-# http://127.0.0.1:8000/api/method/wechat_work.utils.t1&msg=sb250
-def t1(*args, **kwargs):
-    print("\n----------- wechat_work")
-    msg = f"t1: { kwargs.get('msg', '喵喵喵') }"
-    send_str_to_wework(msg, "维修记录")
-    return msg
 
 
 
